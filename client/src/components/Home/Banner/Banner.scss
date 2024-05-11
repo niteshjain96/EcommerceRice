@@ -1,0 +1,40 @@
+@import "../../../css-config/mixins.scss";
+.hero-banner {
+    position: relative;
+    // background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    height: 100vh; /* Adjusted height to take full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image cover the entire banner */
+    height: 100%; /* Make the image cover the entire banner */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    z-index: -1; /* Move the image behind other content */
+}
+
+.content {
+    z-index: 1; /* Ensure content is above the image */
+    text-align: center;
+    color: white;
+}
+
+.text-content {
+    h1{
+        color: darkblue;
+    }
+    button{
+        padding: 10px;
+        background-color: gray;
+        color: black;
+    }
+    padding: 20px;
+    font-size: xx-large; /* Increase font size to larger */
+    text-align: right; /* Align text content to the right */
+}
